@@ -1,0 +1,153 @@
+.about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: rgb(253, 253, 253);
+}
+
+.about__text-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  overflow: hidden;
+  width: 50%;
+  height: auto;
+  padding: 5% 8% 5% 10%;
+  overflow: hidden;
+}
+
+.about__text-part__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 3rem 0rem 2rem;
+  row-gap: 2rem;
+}
+
+.about__h2 {
+  font-size: 2em;
+  font-weight: 600;
+  color: $text-color;
+}
+
+.about__text-moto {
+  font-size: 1.3em;
+  font-weight: 300;
+  color: $text-color;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.15rem;
+  font-weight: 300;
+  color: $text-color;
+  border-left: 5px solid $text-color-accent;
+  background-color: $background-color-2;
+  padding: 0rem 1rem;
+  min-height: 5rem;
+  box-shadow: 0px 2px 4px $button-shadow;
+}
+
+.about__img-part {
+  display: flex;
+  align-self: center;
+  width: 50%;
+  vertical-align: middle;
+}
+
+.about__img-part__img {
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+//*Adative - Mobile 767, Tablet 767-991
+
+@media screen and (min-width: 249px) and (max-width: 991px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: rgb(253, 253, 253);
+  }
+  
+  .about__text-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    padding: 5% 8% 5% 10%;
+    overflow: hidden;
+  }
+  
+  .about__text-part__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 3rem 0rem 2rem;
+    row-gap: 2rem;
+  }
+  
+  .about__h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: $text-color;
+  }
+  
+  .about__text-moto {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: $text-color;
+  }
+  
+  .about__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 300;
+    color: $text-color;
+    border-left: 5px solid $text-color-accent;
+    background-color: $background-color-2;
+    padding: 0rem 1rem;
+    min-height: 5rem;
+    box-shadow: 0px 2px 4px $button-shadow;
+  }
+  
+  .about__img-part {
+    display: flex;
+    align-self: flex-start;
+    width: 100%;
+    vertical-align: middle;
+  }
+  
+  .about__img-part__img {
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
